@@ -1,0 +1,6 @@
+{
+  "name": "One-Stop Personalized Career and Education Advisor",
+  "description": "An AI-powered advisor to help students and job seekers discover careers, choose courses, explore higher education, prepare for interviews, and improve skills.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

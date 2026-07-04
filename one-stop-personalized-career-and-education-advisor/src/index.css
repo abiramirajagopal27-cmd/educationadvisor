@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom styles for Bento Grid theme */
+@layer base {
+  body {
+    @apply antialiased transition-colors duration-200;
+  }
+}
+
+/* Bento Card and background theme helpers */
+.bento-bg-light {
+  background-color: #F0F4F8;
+}
+
+.bento-bg-dark {
+  background-color: #080B13;
+}
+
+.bento-card {
+  @apply rounded-3xl transition-all duration-300;
+}
+
+.bento-card-light {
+  @apply bg-white border border-blue-100/80 shadow-md shadow-blue-900/5 hover:shadow-lg hover:shadow-blue-900/10;
+}
+
+.bento-card-dark {
+  @apply bg-slate-900/40 border border-slate-800/80 shadow-lg shadow-black/20 hover:shadow-xl hover:shadow-black/35;
+}
+
+.bento-pill-light {
+  @apply bg-white border border-blue-100 text-blue-800 rounded-full px-4 py-2 text-sm font-semibold shadow-sm;
+}
+
+.bento-pill-dark {
+  @apply bg-slate-900 border border-slate-800 text-slate-200 rounded-full px-4 py-2 text-sm font-semibold shadow-md;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.3);
+  border-radius: 3px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.5);
+}
+
